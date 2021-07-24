@@ -1,6 +1,7 @@
 package strings;
 
 public class CharactersSame {
+  // OK
 
   /** Driver Code */
   public static void main(String[] args) {
@@ -19,6 +20,7 @@ public class CharactersSame {
   public static boolean isAllCharactersSame(String s) {
     for (int i = 1, length = s.length(); i < length; ++i) {
       if (s.charAt(i) != s.charAt(0)) {
+        // check every char with the first char
         return false;
       }
     }
