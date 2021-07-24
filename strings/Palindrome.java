@@ -5,6 +5,8 @@ class Palindrome {
 
   /** Driver Code */
   public static void main(String[] args) {
+    // Not Ok -> new StringBuilder(s).reverse().toString()
+
     String[] palindromes = {null, "", "aba", "123321"};
     for (String s : palindromes) {
       assert isPalindrome(s) && isPalindromeRecursion(s) && isPalindrome1(s);
@@ -22,8 +24,16 @@ class Palindrome {
    * @param s a string to check
    * @return {@code true} if given string is palindrome, otherwise {@code false}
    */
+
+  // Three method
+
+  // Method One
   public static boolean isPalindrome(String s) {
     return (s == null || s.length() <= 1) || s.equals(new StringBuilder(s).reverse().toString());
+    // (s == null || s.length() <= 1) -> if the string is legal
+    // s.equals(new StringBuilder(s).reverse().toString()
+    // StringBuilder(s) -> ???
+    //
   }
 
   /**
@@ -32,16 +42,22 @@ class Palindrome {
    * @param s a string to check
    * @return {@code true} if given string is palindrome, otherwise {@code false}
    */
+
+  // Method 2 -> Recursion
   public static boolean isPalindromeRecursion(String s) {
     if (s == null || s.length() <= 1) {
+      // basic case
       return true;
     }
 
     if (s.charAt(0) != s.charAt(s.length() - 1)) {
+      // identification case
       return false;
     }
 
     return isPalindrome(s.substring(1, s.length() - 1));
+    // s.substring(1, s.length() - 1)
+    // use substring to finish the recursion;
   }
 
   /**
@@ -50,6 +66,8 @@ class Palindrome {
    * @param s a string to check
    * @return {@code true} if given string is palindrome, otherwise {@code false}
    */
+
+  // Method 3 - use the basic method
   public static boolean isPalindrome1(String s) {
     if (s == null || s.length() <= 1) {
       return true;
