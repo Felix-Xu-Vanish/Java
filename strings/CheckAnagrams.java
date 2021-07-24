@@ -30,15 +30,15 @@ public class CheckAnagrams {
     int l2 = s2.length();
     s1 = s1.toLowerCase();
     s2 = s2.toLowerCase();
-    // preper ready
+    // get ready
 
     Map<Character, Integer> charAppearances = new HashMap<>();
     // Map<Character, Integer> ?
 
-
     for (int i = 0; i < l1; i++) {
       char c = s1.charAt(i);
       int numOfAppearances = charAppearances.getOrDefault(c, 0);
+      // getOrDefault
       charAppearances.put(c, numOfAppearances + 1);
     }
 
