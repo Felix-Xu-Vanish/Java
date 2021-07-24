@@ -2,6 +2,7 @@ package strings;
 
 import java.util.HashMap;
 // HashMap ?
+
 import java.util.Map;
 // Map ?
 
@@ -10,7 +11,7 @@ import java.util.Map;
  * case).
  */
 public class CheckAnagrams {
-  // Not OK
+  // Need Map
 
   public static void main(String[] args) {
     assert isAnagrams("Silent", "Listen");

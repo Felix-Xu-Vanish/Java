@@ -20,9 +20,11 @@ public class Lower {
     char[] values = s.toCharArray();
     for (int i = 0; i < values.length; ++i) {
       if (Character.isLetter(values[i]) && Character.isUpperCase(values[i])) {
+        // need letter and uppercase
         values[i] = Character.toLowerCase(values[i]);
       }
     }
     return new String(values);
+    // use char[] array to edit string
   }
 }

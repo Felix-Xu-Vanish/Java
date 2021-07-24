@@ -37,6 +37,7 @@ import java.util.HashMap;
  * Algorithms.
  */
 public class HorspoolSearch {
+  // Need HashMap
 
   private static HashMap<Character, Integer> shiftValues; // bad symbol table
   private static Integer patternLength;
