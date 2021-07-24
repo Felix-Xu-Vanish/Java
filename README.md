@@ -3,4 +3,5 @@
 + Math
 + Data Structures
 + Strings
++ HashMap
 
