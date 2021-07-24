@@ -2,7 +2,7 @@ package strings;
 
 /**
  * Given a string, moving several characters in front of the string to the end of the string. For
- * example, move the two characters'a' and 'b' in front of the string "abcdef" to the end of the
+ * example, move the two characters 'a' and 'b' in front of the string "abcdef" to the end of the
  * string, so that the original string becomes the string "cdefab"
  */
 public class Rotation {

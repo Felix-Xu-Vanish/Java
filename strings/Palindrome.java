@@ -5,7 +5,7 @@ class Palindrome {
 
   /** Driver Code */
   public static void main(String[] args) {
-    // Not Ok -> new StringBuilder(s).reverse().toString()
+    // Ok
 
     String[] palindromes = {null, "", "aba", "123321"};
     for (String s : palindromes) {
